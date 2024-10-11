@@ -1,0 +1,112 @@
+/* styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9fafb;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align content to the top */
+    min-height: 100vh;
+    text-align: center;
+    padding-top: 40px; /* Add space at the top */
+  }
+  
+  h1 {
+    color: #1f2937;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"], input[type="number"] {
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 30px;
+    outline: none;
+    transition: border-color 0.3s;
+    width: 220px;
+    text-align: center; /* Center text inside inputs */
+  }
+  
+  input[type="text"]:focus, input[type="number"]:focus {
+    border-color: #6366f1;
+  }
+  
+  button {
+    padding: 12px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #6366f1;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0 4px 6px rgba(99, 102, 241, 0.3);
+  }
+  
+  button:hover {
+    background-color: #4f46e5;
+  }
+  
+  .mainDisplay {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto; /* Center the container horizontally */
+    text-align: center;
+  }
+  
+  .stockSymbol {
+    font-size: 1.75rem;
+    color: #374151;
+    margin: 20px 0;
+  }
+  
+  .stockTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 1rem;
+  }
+  
+  .stockTable th, .stockTable td {
+    padding: 15px;
+    text-align: center; /* Center text inside table cells */
+    border: 1px solid #e5e7eb;
+  }
+  
+  .stockTable th {
+    background-color: #4f46e5;
+    color: #ffffff;
+  }
+  
+  .stockTable tr:nth-child(even) {
+    background-color: #f3f4f6;
+  }
+  
+  .stockTable tr:hover {
+    background-color: #e5e7eb;
+  }
+  
+  .stockTable td {
+    color: #4b5563;
+  }
+  
+  .loading {
+    font-size: 1.25rem;
+    color: #6366f1;
+  }
+  
